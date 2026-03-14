@@ -27,7 +27,7 @@ def get_patch_size(args):
     
     patch_z = round(args.img_shape[0]/args.dshape)
     patch_y = round(args.img_shape[1]/args.hshape)
-    patch_x = round(args.img_shape[2]/args.hshape)
+    patch_x = round(args.img_shape[2]/args.wshape)
     
     patchsize = (patch_z, patch_y, patch_x)
     skip_z = round((args.img_shape[0] - patch_z) / (args.dshape-1))
